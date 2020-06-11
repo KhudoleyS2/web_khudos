@@ -146,21 +146,26 @@ body{
 
 .quienes-container-img{
     width: 60%;
+    overflow: hidden;
     /* background: linear-gradient(to left, rgba(255,255,255,0), rgba(34,34,34,1)), url(../img/fabrica1.png);
     background-size: cover; */
 }
-
-.quienes-container-img{
+.quienes-container-img figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    height: 100%;
+    animation: 20s slider infinite; 
+}
+.quienes-container-img figure img{
+    min-height: 100%;
+    width: 20%;
+    float: left;
     object-fit: cover;
 }
 
-.mySlides {
-     max-width: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    display:none;
-}
+
 
 /* End Quienes somos */
 
@@ -308,7 +313,20 @@ body{
 
 
 /* ANIMACIONES ___________________________________________ */
+
 @keyframes menu-bump {
     0% {top: 0px;}
     100% {top: 20px;}
   }
+
+@keyframes slider {
+    0%{left:0;}
+    20%{left: 0;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+}
