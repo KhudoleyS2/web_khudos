@@ -70,7 +70,7 @@ body{
     height: 50px;
     width: 50px;
 
-    background-color: #444444;
+    background-color: #1f1f1f;
     opacity: 0.5;
 
     border: none;
@@ -80,16 +80,19 @@ body{
 
     cursor: pointer;
 
-    display: grid;
+    display: none;
     justify-content: center;
     align-content: center;
 
     text-decoration: none;
+
+    transition: opacity ease 0.3s;
 }
 
 
 .boton-inicio:hover{
-    opacity: 0.9;
+    opacity: 0.95;
+
 }
 
 
@@ -159,9 +162,11 @@ body{
 .navbar-container-menu ul a:hover{
     top: -12px;
 }
-
-
 /* End Navbar */
+
+
+
+
 
 
 
@@ -174,6 +179,9 @@ body{
     margin: 20px 50px 40px;
 }
 /* End Hero */
+
+
+
 
 
 
@@ -216,9 +224,6 @@ body{
     float: left;
     object-fit: cover;
 }
-
-
-
 /* End Quienes somos */
 
 
@@ -288,11 +293,15 @@ body{
     text-align: left;
     font-weight: lighter;
 }
-
-
-
-
 /* End Productos */
+
+
+
+
+
+
+
+
 
 /* Contacto */
 .contacto-container{
@@ -347,6 +356,9 @@ body{
     padding: 10px;
 }
 /* End Contacto */
+
+
+
 
 
 
