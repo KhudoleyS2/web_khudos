@@ -190,6 +190,12 @@ body{
 
 .producto-item{
 
+    display: flex;
+    place-content: center;
+    place-items: flex-end;
+    width: 100%;
+    height: 100%;
+
     -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1);
     -moz-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1);
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1);
@@ -200,7 +206,38 @@ body{
     border-radius: 10px;
     text-align: center;
     align-items: center;
+    overflow: hidden;
 }
+
+.producto-item .producto-item-content{
+    place-self: flex-end;
+    height: 60%;
+    position: relative;
+    bottom: -150px;
+    background-color: #222222;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    transition: bottom linear 0.2s;
+}
+
+.producto-item .producto-item-content:hover{
+    cursor: pointer;
+    bottom: 0;
+}
+
+.producto-item .producto-item-content *{
+    padding: 5px 5px 10px 5px;
+}
+
+.producto-item .producto-item-content p{
+    line-height: 1rem;
+    text-align: left;
+    font-weight: lighter;
+}
+
+
+
+
 /* End Productos */
 
 /* Contacto */
