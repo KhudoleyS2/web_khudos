@@ -228,6 +228,7 @@ body{
 .productos-container{
     height: 700px;
     background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     
     -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
     -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
@@ -237,6 +238,8 @@ body{
     grid-template: repeat(2,1fr) / repeat(3, 1fr);
     grid-gap: 50px;
     padding: 30px;
+
+
 }
 
 .producto-item{
