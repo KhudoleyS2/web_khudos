@@ -56,7 +56,7 @@ body{
     height: 100%;
     margin: auto;
     background-color: #3a4fbb69;
-    /* display: block; */
+
 }
 
 
@@ -84,6 +84,7 @@ body{
 
 .navbar-container-menu  ul{
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -105,7 +106,7 @@ body{
 }
 
 .navbar-container-menu ul a:hover{
-    top: -7px;
+    top: -12px;
 }
 
 
@@ -313,11 +314,6 @@ body{
 
 
 /* ANIMACIONES ___________________________________________ */
-
-@keyframes menu-bump {
-    0% {top: 0px;}
-    100% {top: 20px;}
-  }
 
 @keyframes slider {
     0%{left:0;}
