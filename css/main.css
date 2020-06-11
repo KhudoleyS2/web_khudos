@@ -28,6 +28,10 @@ body{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
+
+/* BACKGROUND VIDEO ______________________________________________ */
+
+
 #background-video{
     opacity: 0.2;
     object-fit: cover;
@@ -40,6 +44,9 @@ body{
     
 }
 
+
+/* BOTONES ________________________________________________________ */
+
 .boton{
     padding: 10px 20px;
     border: 1.5px solid #ffffff;
@@ -51,6 +58,41 @@ body{
     background-color: #ffffff;
     color: #000000;
 }
+
+
+.boton-inicio{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    margin: 30px;
+
+    height: 50px;
+    width: 50px;
+
+    background-color: #444444;
+    opacity: 0.5;
+
+    border: none;
+    box-shadow: none;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    text-decoration: none;
+}
+
+
+.boton-inicio:hover{
+    opacity: 0.9;
+}
+
+
 
 /* Main Container ________________________________________ */
 
@@ -395,9 +437,12 @@ body{
     font-size: 18px;
     line-height: 1.4rem;
 }
-
-
 /* End Footer */
+
+
+
+
+
 
 
 
