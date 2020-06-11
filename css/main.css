@@ -1,0 +1,314 @@
+
+
+/* BASE ____________________________________________________*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;   
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth
+}
+
+body{
+    background-color: #6ea5ff;
+    width: 100%;
+    height: 100%;
+}
+
+#background-video{
+    opacity: 0.2;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+.boton{
+    padding: 10px 20px;
+    border: 1.5px solid #ffffff;
+    text-decoration: none;
+    transition: linear 0.15s;
+}
+
+.boton:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Main Container ________________________________________ */
+
+.main-container{
+
+    -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+
+
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    background-color: #3a4fbb69;
+    /* display: block; */
+}
+
+
+
+
+/* Divs containers _______________________________________ */
+
+/* Navbar */
+.navbar-container{
+    display: flex;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.navbar-container-logo img{
+    max-height: 70px;
+    margin-left: 50px;
+}
+
+.navbar-container-menu {
+    width: 100%;
+    align-self: center;
+    margin: 0 50px;
+}
+
+.navbar-container-menu  ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-container-menu  ul li{
+    display: grid;
+    grid-gap: 5px;
+    justify-items: center;
+
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.navbar-container-menu ul a{
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+}
+
+.navbar-container-menu ul a:hover{
+    top: -7px;
+}
+
+
+/* End Navbar */
+
+
+
+/* Hero */
+.hero-container{
+    height: 420px;
+}
+
+.hero-container > *{
+    margin: 20px 50px 40px;
+}
+/* End Hero */
+
+
+
+
+/* Quienes somos */
+.quienes-container{
+    -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    background-color: #222222;
+    height: auto;
+    display: flex;
+}
+
+.quienes-container-content{
+    width: 40%;
+}
+
+.quienes-container-content > *{
+    margin: 50px;
+}
+
+.quienes-container-img{
+    width: 60%;
+    /* background: linear-gradient(to left, rgba(255,255,255,0), rgba(34,34,34,1)), url(../img/fabrica1.png);
+    background-size: cover; */
+}
+
+.quienes-container-img{
+    object-fit: cover;
+}
+
+.mySlides {
+     max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display:none;
+}
+
+/* End Quienes somos */
+
+
+
+
+/* Productos */
+.productos-container{
+    height: 700px;
+    background-color: #ffffff;
+    
+    -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 30px;
+}
+
+.producto-item{
+
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1);
+
+    background-color: #444444;
+    background: url(../img/burbuja-fondo.png);
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+/* End Productos */
+
+/* Contacto */
+.contacto-container{
+    -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+
+    display: flex;
+
+    height: fit-content;
+    background-color: #444444;
+}
+
+.contacto-container-content{
+    width: 60%;
+    text-align: center;
+    padding: 20px 10px 50px;
+}
+
+.contacto-container-img{
+    width: 40%;
+
+    background: linear-gradient(to right, rgba(68, 68, 68, 0.65), rgb(68, 68, 68)), url(../img/oficina.jpg);
+    background-size: cover;
+}
+
+.contacto-container form *{
+    align-self: center;
+    margin: 10px;
+    width: 70%;
+    color: #000000;
+}
+
+.contacto-container form a{
+    color: #ffffff;
+}
+
+.contacto-container-header{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+}
+.contacto-container-header *{
+    padding: 10px;
+}
+/* End Contacto */
+
+
+
+
+/* FAQ */
+.faq-container{
+
+    -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+
+    background-color: #ffffff;
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(230,230,230,1));
+    height: fit-content;
+    padding: 20px 20px 80px;
+}
+.faq-container *{
+    color: #000000;
+}
+.faq-container > *{
+    
+    padding: 10px 50px;
+}
+
+.faq-container p{
+    font-weight: lighter;
+    line-height: 1rem;
+}
+/* End FAQ */
+
+
+
+
+
+
+/* Footer */
+.footer-container{
+
+    -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+    box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
+
+    background: linear-gradient(to left , rgba(86,111,230,1), rgba(47,67,171,1));
+
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.2rem;
+
+
+    height: auto;
+    padding: 20px 50px;
+    background-color: #566fe6;
+}
+
+.footer-container h4{
+    font-size: 16px;
+}
+/* End Footer */
+
+
+
+
+
+
+/* ANIMACIONES ___________________________________________ */
+@keyframes menu-bump {
+    0% {top: 0px;}
+    100% {top: 20px;}
+  }
