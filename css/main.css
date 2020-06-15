@@ -17,6 +17,7 @@ body{
     background-color: #6ea5ff;
     width: 100%;
     min-height: 100%;
+    
 
     /* CheckPattern */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23a9a7ac' fill-opacity='0.33'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
@@ -52,6 +53,7 @@ body{
     border: 1.5px solid #ffffff;
     text-decoration: none;
     transition: linear 0.15s;
+    width: fit-content;
 }
 
 .boton:hover{
@@ -106,7 +108,7 @@ body{
     box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
 
 
-    width: 800px;
+    max-width: 800px;
     height: 100%;
     margin: auto;
     background-color: #3a4fbb69;
@@ -117,6 +119,12 @@ body{
 
 
 /* Divs containers _______________________________________ */
+
+
+/* Menu Hamburguesa oculta por default en dispositivo desktop*/
+.navbar-hamburguesa{
+    display: none;
+}
 
 /* Navbar */
 .navbar-container{
@@ -172,7 +180,8 @@ body{
 
 /* Hero */
 .hero-container{
-    height: 420px;
+    /* height: 420px; */
+    display: grid;
 }
 
 .hero-container > *{
@@ -231,7 +240,6 @@ body{
 
 /* Productos */
 .productos-container{
-    height: 700px;
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     
@@ -239,8 +247,11 @@ body{
     -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
     box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64);
 
+    justify-content: center;
     display: grid;
-    grid-template: repeat(2,1fr) / repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-flow: row;
+    grid-auto-rows: 325px;
     grid-gap: 50px;
     padding: 30px;
 
@@ -338,7 +349,6 @@ body{
 
 .contacto-container-img{
     padding-left: 50px;
-    padding-top: 20;
 
     width: 40%;
 
@@ -350,6 +360,7 @@ body{
     font-size: 30px;
 }
 /* End Contacto */
+
 
 
 
@@ -473,3 +484,137 @@ body{
 }
 
 
+
+
+
+
+
+/* MEDIA QUERIES _________________________________________ */
+
+
+
+@media (max-width:800px){
+
+    /* Esconder video*/
+    #background-video{
+        display: none;
+    }
+
+
+    /* MAIN CONTENEDOR */
+    .main-container{
+        background-color: #6ea5ff;
+    }
+
+
+    /* NAVBAR */
+    .navbar-container{
+        justify-content: center;
+        margin-top: 65px;
+    }
+    .navbar-container-logo img{
+        margin: 0;
+    }
+    .navbar-container-menu{
+        display: none;
+    }
+
+
+
+    /* HERO */
+    .hero-container {
+        justify-items: center;
+ 
+    }
+    .hero-container div, .hero-container a{
+        text-align: center;
+    }
+
+
+    /* QUIENES SOMOS */
+    .quienes-container{
+        display: block;
+    }
+    .quienes-container-content{
+        width: 100%;
+    }
+    .quienes-container-content h2{
+        text-align: center;
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+    .quienes-container-img{
+        width: 100%;
+    }
+
+    /* CONTACTO */
+    .contacto-container{
+       justify-content: center; 
+       background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)), url("../img/oficina.jpg");
+       background-size: cover;
+    }
+
+    
+    .contacto-container-img{
+        display: none;
+    }
+
+    .contacto-container-content{
+        width: 100%;
+    }
+    .contacto-container-content > *{
+        margin: auto;
+    }
+    .contacto-container-content > hr{
+        margin: 20px;
+    }
+
+
+
+    /* FAQ */
+
+    .faq-container{
+        padding: 20px;
+    }
+
+    .faq-container > *{
+        padding:0;
+    }
+
+    .faq-container h2{
+        margin-bottom: 20px;
+    }
+
+    .faq-container div{
+        margin-bottom: 30px;
+    }
+
+
+
+    /* FOOTER */
+    .footer-container{
+        flex-wrap: wrap-reverse;
+        padding: 0;
+    }
+    .footer-details{
+        width: 100%;
+        padding: 0rem 2rem 2rem 2rem;
+    }
+    .footer-maps{
+        width: 100%;
+        padding: 2.5rem 0rem;
+    }
+
+
+    .navbar-hamburguesa{
+        display: block;
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        padding: 6px 16px;
+        font-size: 30px;
+        width: 100%;
+        z-index: 2;
+        border-bottom: 1px solid #444444;
+
+}

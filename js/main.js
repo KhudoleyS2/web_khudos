@@ -1,6 +1,11 @@
 // Funcion para mostrar u ocultar boton de volver a inicio.
+
 botonInicio = document.getElementById("boton-inicio");
-var myScrollFunc = function () {
+navbarHamburguesa = document.getElementById("navbar-hamburguesa");
+
+console.log("hola")
+
+var scrollBotonInicio = function () {
     var y = window.scrollY;
     if (y >= 150){
         botonInicio.style.display = "grid";
@@ -10,6 +15,4 @@ var myScrollFunc = function () {
     }
 }
 
-window.addEventListener("scroll", myScrollFunc);
-
-// 
+window.addEventListener("scroll", scrollBotonInicio);
