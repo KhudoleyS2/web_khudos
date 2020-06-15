@@ -1,7 +1,5 @@
-// Funcion para mostrar u ocultar boton de volver a inicio.
-
+// BOTON INICIO
 botonInicio = document.getElementById("boton-inicio");
-navbarHamburguesa = document.getElementById("navbar-hamburguesa");
 
 var scrollBotonInicio = function () {
     var y = window.scrollY;
@@ -18,4 +16,20 @@ window.addEventListener("scroll", scrollBotonInicio);
 
 
 
-botonHamburguesa = document.getElementById("boton-hamburguesa")
+// MENU HAMBURGUESA
+botonHamburguesa = document.getElementById("boton-hamburguesa");
+opcionesHamburguesa = document.getElementById("navbar-hamburguesa-opciones");
+
+function botonMenuHamburguesa() { 
+    if (opcionesHamburguesa.style.display == "none"){
+        opcionesHamburguesa.style.display = "block";
+    }
+    else{
+        opcionesHamburguesa.style.display = "none";
+    }
+    
+
+    console.log("La funcion se ejecuta");
+}
+
+botonHamburguesa.addEventListener("click",botonMenuHamburguesa)

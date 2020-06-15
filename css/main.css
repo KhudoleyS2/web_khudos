@@ -506,6 +506,12 @@ body{
     }
 
 
+    /* BOTON INICIO */
+    .boton-inicio{
+        margin: 20px;
+    }
+
+
     /* MAIN CONTENEDOR */
     .main-container{
         background-color: #6ea5ff;
@@ -526,16 +532,28 @@ body{
         background-color: #000000;
         position: fixed;
         top: 0;
-        padding: 0 0 4px;
         font-size: 25px;
         width: 100%;
         z-index: 2;
         border-bottom: 1px solid #444444;
     }
+    .navbar-hamburguesa a{
 
-    .navbar-hamburguesa > *{
-        min-width: 100%;
-        padding: 0px 0px 0px 20px;
+        margin: 6px 0px 8px 20px;
+    }
+    
+    .navbar-hamburguesa-opciones {
+        display: none;
+        width: 100%;
+    }
+    .navbar-hamburguesa-opciones li{
+        border-top: 1px solid #222222 ;
+        display: inherit;
+        padding: 10px 0px;
+    }
+    .navbar-hamburguesa-opciones li a{
+        text-decoration: none;
+        width: 100%;
     }
 
 
