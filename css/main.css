@@ -664,7 +664,7 @@ body{
     .footer-container{
         flex-wrap: wrap-reverse;
         padding: 0;
-        height:100vh;
+        height:95vh;
         align-content: flex-end;
     }
     .footer-details{
