@@ -65,7 +65,6 @@ body{
     border: 1.5px solid #ffffff;
     text-decoration: none;
     transition: linear 0.15s;
-    width: fit-content;
 }
 
 .boton:hover{
@@ -193,7 +192,7 @@ body{
 /* Hero */
 .hero-container{
     /* height: 420px; */
-    display: grid;
+    padding-bottom: 50px;
 }
 
 .hero-container-punchline{
@@ -586,11 +585,16 @@ body{
     /* HERO */
     .hero-container {
         justify-items: center;
+        display: grid;
     }
     .hero-container > *{
             margin: 20px 20px 40px;
     }
     .hero-container div{
+        text-align: center;
+    }
+
+    .hero-container a{
         text-align: center;
     }
 
