@@ -184,6 +184,10 @@ body{
     display: grid;
 }
 
+.hero-container-punchline{
+    /* text-align: center; */
+}
+
 .hero-container > *{
     margin: 20px 50px 40px;
 }
@@ -273,7 +277,7 @@ body{
     background-color: #444444;
     background: url(../img/burbuja-fondo.png);
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     align-items: center;
     overflow: hidden;
@@ -331,6 +335,7 @@ body{
     padding: 20px 10px 50px;
     text-align: left;
     font-weight: lighter;
+    background: linear-gradient(to right, rgb(69, 69, 69) 0%, rgb(37, 37, 37) 100%);
 }
 
 .contacto-container-content i{
@@ -504,13 +509,41 @@ body{
     /* MAIN CONTENEDOR */
     .main-container{
         background-color: #6ea5ff;
+        background-image: none;
+        box-shadow: none;
+        /* -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64); */
+        /* -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64); */
+        /* box-shadow: 5px 0px 53px -20px rgba(0,0,0,0) */
     }
 
 
-    /* NAVBAR */
+
+
+    /* NAVBAR HAMBURGUESA */
+    .navbar-hamburguesa{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        padding: 0 0 4px;
+        font-size: 25px;
+        width: 100%;
+        z-index: 2;
+        border-bottom: 1px solid #444444;
+    }
+
+    .navbar-hamburguesa > *{
+        min-width: 100%;
+        padding: 0px 0px 0px 20px;
+    }
+
+
+
+    /* NAVBAR DESKTOP (Ahora solo logo) */
     .navbar-container{
         justify-content: center;
-        margin-top: 65px;
+        margin-top: 55px;
     }
     .navbar-container-logo img{
         margin: 0;
@@ -524,24 +557,32 @@ body{
     /* HERO */
     .hero-container {
         justify-items: center;
- 
     }
-    .hero-container div, .hero-container a{
+    .hero-container > *{
+            margin: 20px 20px 40px;
+    }
+    .hero-container div{
         text-align: center;
     }
+
 
 
     /* QUIENES SOMOS */
     .quienes-container{
         display: block;
+        background: rgb(34,34,34);
+        background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 39%, rgba(0,0,0,1) 100%);
     }
     .quienes-container-content{
         width: 100%;
     }
+    .quienes-container-content > * {
+        margin: 20px 20px 40px;
+    }
     .quienes-container-content h2{
         text-align: center;
         margin: 0;
-        padding: 20px 0 0 0;
+        padding: 20px 20px 0 0;
     }
     .quienes-container-img{
         width: 100%;
@@ -553,7 +594,6 @@ body{
        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)), url("../img/oficina.jpg");
        background-size: cover;
     }
-
     
     .contacto-container-img{
         display: none;
@@ -561,6 +601,7 @@ body{
 
     .contacto-container-content{
         width: 100%;
+        background: none;
     }
     .contacto-container-content > *{
         margin: auto;
@@ -606,15 +647,3 @@ body{
     }
 
 
-    .navbar-hamburguesa{
-        display: block;
-        background-color: #000000;
-        position: fixed;
-        top: 0;
-        padding: 6px 16px;
-        font-size: 30px;
-        width: 100%;
-        z-index: 2;
-        border-bottom: 1px solid #444444;
-
-}

@@ -3,8 +3,6 @@
 botonInicio = document.getElementById("boton-inicio");
 navbarHamburguesa = document.getElementById("navbar-hamburguesa");
 
-console.log("hola")
-
 var scrollBotonInicio = function () {
     var y = window.scrollY;
     if (y >= 150){
@@ -16,3 +14,8 @@ var scrollBotonInicio = function () {
 }
 
 window.addEventListener("scroll", scrollBotonInicio);
+
+
+
+
+botonHamburguesa = document.getElementById("boton-hamburguesa")
