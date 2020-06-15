@@ -317,9 +317,24 @@ body{
 
 .contacto-container-content{
     width: 60%;
-    text-align: center;
     padding: 20px 10px 50px;
+    text-align: left;
+    font-weight: lighter;
 }
+
+.contacto-container-content i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contacto-container-content > *{
+    margin: 20px;
+    text-align: center;
+}
+
+.contacto-container-content div > *{
+    margin-top: 10px;
+}
+
 
 .contacto-container-img{
     padding-left: 50px;
@@ -333,27 +348,6 @@ body{
 
 .contacto-container-img i{
     font-size: 30px;
-}
-
-.contacto-container form *{
-    align-self: center;
-    margin: 10px;
-    width: 70%;
-    color: #000000;
-}
-
-.contacto-container form a{
-    color: #ffffff;
-}
-
-.contacto-container-header{
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    justify-content: center;
-}
-.contacto-container-header *{
-    padding: 10px;
 }
 /* End Contacto */
 
@@ -477,3 +471,5 @@ body{
     95%{left: -300%;}
     100%{left: -400%;}
 }
+
+
