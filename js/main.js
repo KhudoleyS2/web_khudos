@@ -1,5 +1,5 @@
-// BOTON INICIO
-botonInicio = document.getElementById("boton-inicio");
+// BOTON INICIO____________________________________
+var botonInicio = document.getElementById("boton-inicio");
 
 var scrollBotonInicio = function () {
     var y = window.scrollY;
@@ -16,9 +16,10 @@ window.addEventListener("scroll", scrollBotonInicio);
 
 
 
-// MENU HAMBURGUESA
-botonHamburguesa = document.getElementById("boton-hamburguesa");
-opcionesHamburguesa = document.getElementById("navbar-hamburguesa-opciones");
+// MENU HAMBURGUESA_________________________________
+// Abrir o cerrar el menu.
+var botonHamburguesa = document.getElementById("boton-hamburguesa");
+var opcionesHamburguesa = document.getElementById("navbar-hamburguesa-opciones");
 
 function botonMenuHamburguesa() { 
     if (opcionesHamburguesa.style.display == "none"){
@@ -27,9 +28,13 @@ function botonMenuHamburguesa() {
     else{
         opcionesHamburguesa.style.display = "none";
     }
-    
+}
+botonHamburguesa.addEventListener("click",botonMenuHamburguesa)
 
-    console.log("La funcion se ejecuta");
+// Cerrar el menu si se selecciona una opcion.
+function cerrarMenuHamburguesa() {
+    opcionesHamburguesa.style.display = "none";
 }
 
-botonHamburguesa.addEventListener("click",botonMenuHamburguesa)
+opcionesHamburguesa.addEventListener("click",cerrarMenuHamburguesa)
+

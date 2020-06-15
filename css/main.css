@@ -29,6 +29,16 @@ body{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
+/* Necesario para que css haga scroll ligeramente encima del elemento deseado */
+.anchor {
+    display: block;
+    height: 51px;
+    margin-top: -51px;
+    visibility: hidden;
+}
+
+
+
 
 /* BACKGROUND VIDEO ______________________________________________ */
 
@@ -538,7 +548,7 @@ body{
         border-bottom: 1px solid #444444;
     }
     .navbar-hamburguesa a{
-
+        cursor: pointer;
         margin: 6px 0px 8px 20px;
     }
     
@@ -654,6 +664,8 @@ body{
     .footer-container{
         flex-wrap: wrap-reverse;
         padding: 0;
+        height:100vh;
+        align-content: flex-end;
     }
     .footer-details{
         width: 100%;
