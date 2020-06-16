@@ -192,14 +192,12 @@ body{
 /* Hero */
 .hero-container{
     /* height: 420px; */
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 .hero-container-punchline{
     /* text-align: center; */
-}
-.hero-container-punchline h4{
-    line-height: 0;
+    line-height: 1;
 }
 
 
@@ -208,6 +206,10 @@ body{
     font-weight: lighter;
     font-size: 1.25rem;
 }
+.hero-container .boton{
+    font-weight: bold;
+}
+
 /* End Hero */
 
 
@@ -406,7 +408,7 @@ body{
 }
 .faq-container > *{
     
-    padding: 10px 50px;
+    padding: 20px 50px;
 }
 
 .faq-container p{
@@ -437,7 +439,7 @@ body{
 
 
     height: auto;
-    padding: 20px 50px;
+    padding: 25px 50px;
     background-color: #566fe6;
 }
 
