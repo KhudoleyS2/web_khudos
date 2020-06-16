@@ -324,7 +324,7 @@ body{
 .producto-item .producto-item-content p{
     line-height: 1rem;
     text-align: left;
-    font-weight: lighter;
+    font-weight: 300;
 }
 /* End Productos */
 
@@ -362,7 +362,7 @@ body{
 }
 .contacto-container-content > *{
     margin: 20px;
-    text-align: center;
+    
 }
 
 .contacto-container-content div > *{
@@ -635,6 +635,10 @@ body{
        justify-content: center; 
        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)), url("../img/oficina.jpg");
        background-size: cover;
+    }
+
+    .contacto-container > *{
+        text-align: center;
     }
     
     .contacto-container-img{
