@@ -17,7 +17,7 @@ window.addEventListener("scroll", scrollBotonInicio);
 
 
 // MENU HAMBURGUESA_________________________________
-// Abrir o cerrar el menu.
+// Abrir o cerrar el menu al pulsar sobre el icono.
 var botonHamburguesa = document.getElementById("boton-hamburguesa");
 var opcionesHamburguesa = document.getElementById("navbar-hamburguesa-opciones");
 
@@ -31,10 +31,25 @@ function botonMenuHamburguesa() {
 }
 botonHamburguesa.addEventListener("click",botonMenuHamburguesa)
 
-// Cerrar el menu si se selecciona una opcion.
+// Funcion Cerrar el menu.
 function cerrarMenuHamburguesa() {
     opcionesHamburguesa.style.display = "none";
 }
 
-opcionesHamburguesa.addEventListener("click",cerrarMenuHamburguesa)
+
+// Cerrar el menu si se selecciona una opcion.
+lista_elementos_opciones = document.getElementsByClassName("opcion-hamburguesa");
+for (i=0;i<lista_elementos_opciones.length;i++){
+    lista_elementos_opciones[i].addEventListener("click",cerrarMenuHamburguesa)
+    
+}
+
+
+var divMenuHamburguesa = document.getElementById("navbar-hamburguesa");
+// Listen for click events on body
+document.body.addEventListener('click', function (event) {
+    if (divMenuHamburguesa.contains(event.target)==false) {
+        cerrarMenuHamburguesa();
+    }
+});
 

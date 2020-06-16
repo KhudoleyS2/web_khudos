@@ -198,9 +198,15 @@ body{
 .hero-container-punchline{
     /* text-align: center; */
 }
+.hero-container-punchline h4{
+    line-height: 0;
+}
+
 
 .hero-container > *{
-    margin: 20px 50px 40px;
+    margin: 20px 50px 70px;
+    font-weight: lighter;
+    font-size: 1.25rem;
 }
 /* End Hero */
 
@@ -555,9 +561,10 @@ body{
     .navbar-hamburguesa-opciones {
         display: none;
         width: 100%;
+        z-index: 1;
     }
     .navbar-hamburguesa-opciones li{
-        border-top: 1px solid #222222 ;
+        border-top: 1px solid #404040;
         display: inherit;
         padding: 10px 0px;
     }
