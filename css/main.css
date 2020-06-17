@@ -326,6 +326,37 @@ body{
     text-align: left;
     font-weight: 300;
 }
+
+
+.producto-burbuja{
+    background: url("../img/burbuja1.jpg") no-repeat center center;
+    background-size: cover;
+}
+.producto-minirollos{
+    background: url("../img/minirollos2.jpg") no-repeat center center;
+    background-size: cover;
+}
+.producto-compuestos{
+    background: url("../img/aluminio.jpg") no-repeat center center;
+    background-size: cover;
+}
+.producto-foam{
+    background: url("../img/foam.jpg") no-repeat center center;
+    background-size: cover;
+}
+.producto-formatos{
+    background: url("../img/formatos.jpg") no-repeat center center;
+    background-size: cover;
+}
+.producto-otros{
+    background: url("../img/otros.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+
+
+
+
 /* End Productos */
 
 
@@ -520,7 +551,7 @@ body{
 
     /* Esconder video*/
     #background-video{
-        display: none;
+        /* display: none; */
     }
 
 
@@ -532,8 +563,7 @@ body{
 
     /* MAIN CONTENEDOR */
     .main-container{
-        background-color: #6ea5ff;
-        background-image: none;
+        /* background-color: #6ea5ff; */
         box-shadow: none;
         /* -webkit-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64); */
         /* -moz-box-shadow: 5px 0px 53px -20px rgba(0,0,0,0.64); */
