@@ -406,7 +406,7 @@ body{
 
     width: 40%;
 
-    background: linear-gradient(to right, rgba(68, 68, 68, 0.65), rgb(68, 68, 68)), url(../img/oficina.jpg);
+    background: linear-gradient(to right, rgba(68, 68, 68, 0.65), rgb(68, 68, 68)), url(../img/oficina2.jpg);
     background-size: cover;
 }
 
@@ -580,13 +580,13 @@ body{
         background-color: #000000;
         position: fixed;
         top: 0;
-        font-size: 25px;
+        font-size: 28px;
         width: 100%;
         z-index: 2;
         border-bottom: 1px solid #444444;
+        cursor: pointer;
     }
     .navbar-hamburguesa a{
-        cursor: pointer;
         margin: 6px 0px 8px 20px;
     }
     
@@ -663,7 +663,7 @@ body{
     /* CONTACTO */
     .contacto-container{
        justify-content: center; 
-       background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)), url("../img/oficina.jpg");
+       background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)), url(../img/oficina2.jpg);
        background-size: cover;
     }
 
